@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "Aplicacion-Convertidor-de-Monedas"
+  "defaultProject": "Aplicacion-Convertidor-de-Monedas",
+  "cli": {
+    "analytics": false
+  }
 }
