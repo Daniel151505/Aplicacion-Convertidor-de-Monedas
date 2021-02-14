@@ -11,3 +11,9 @@ label {
 .centrar{
      padding-top: 100px;
 }
+
+label{
+    font-family: 'Concert One', cursive;
+    font-size: 40px;
+}
+
