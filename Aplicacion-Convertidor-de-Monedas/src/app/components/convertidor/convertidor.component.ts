@@ -12,7 +12,7 @@ export class ConvertidorComponent implements OnInit {
   quiero = 'EUR'
   total = 0
 
-  monedas: string [] = ['USD', 'EUR', 'LIBRA']
+  monedas: string [] = ['USD', 'EUR', 'LIBRA', 'SOLES']
 
   constructor() { }
 
@@ -34,6 +34,10 @@ export class ConvertidorComponent implements OnInit {
         if (this.quiero === 'LIBRA') {
           this.total = this.cantidad * 0.72
         }
+
+        if (this.quiero === 'SOLES') {
+          this.total = this.cantidad * 3.64
+        }
         
         break;
       case 'EUR':
@@ -47,6 +51,10 @@ export class ConvertidorComponent implements OnInit {
 
         if (this.quiero === 'LIBRA') {
           this.total = this.cantidad * 0.88
+        }
+
+        if (this.quiero === 'SOLES') {
+          this.total = this.cantidad * 4.42
         }
           
         break;  
@@ -62,8 +70,30 @@ export class ConvertidorComponent implements OnInit {
         if (this.quiero === 'LIBRA') {
           this.total = this.cantidad
         }
+
+        if (this.quiero === 'SOLES') {
+          this.total = this.cantidad * 5.04
+        }
             
-        break;  
+        break; 
+      case 'SOLES':
+          if (this.quiero === 'USD') {
+            this.total = this.cantidad * 0.27
+          }
+  
+          if (this.quiero === 'EUR') {
+              this.total = this.cantidad * 0.23
+          }
+  
+          if (this.quiero === 'LIBRA') {
+            this.total = this.cantidad * 0.20
+          }
+
+          if (this.quiero === 'SOLES') {
+            this.total = this.cantidad
+          }
+            
+        break;   
     
     }
 
