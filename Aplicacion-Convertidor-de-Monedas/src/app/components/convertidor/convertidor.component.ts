@@ -12,6 +12,8 @@ export class ConvertidorComponent implements OnInit {
   quiero = 'EUR'
   total = 0
 
+  monedas: string [] = ['USD', 'EUR', 'LIBRA']
+
   constructor() { }
 
   ngOnInit(): void {
