@@ -26,7 +26,7 @@
             </div>
         </div>
     </div>
-    <h5 class="text-center">
+    <h5 *ngIf="cantidad > 0" class="text-center">
         <span class="badge bg-success"> {{cantidad}} {{tengo}} </span>
         <span class="badge bg-secondary">SON</span>
         <span class="badge bg-success"> {{total}} {{quiero}} </span>
